@@ -1,14 +1,16 @@
 # Album Name
 
-A block of text describing the album
+A link to an image for the album cover
 
-## Song List
-
-For each song
+A list of songs on the album and for each song:
 
 - The title of the song
 - A link to download the MP3
-- A button to show or hide some example lyrics for the song
+- A toggle button to show and hide the notes for the song, the text for the button changes on toggle
+- A toggle button to show and hide the lyrics for the song, the text for the button changes on toggle
 - An audio player to allow the MP3 to played from the page
 
 The songs are in a sub-folder call mp3s
+The images are in a sub-folder called images
+
+The footer should say that all material is copyrighted to Andy Blackledge

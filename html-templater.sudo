@@ -1,0 +1,22 @@
+# A tool for smartly merging an example HTML file with a YAML file
+
+Takes an example HTML file and merge the contents of a YAML file, repeating sections as appropriate.
+Gives an error message if asked to generate when the state has not been fully set
+
+HTMLTemplater {
+  State {
+    HTMLtemplate
+    YAMLdata
+  }
+  Constraints {
+    Only use Bootstrap
+  }
+  /help - list the commands
+  /set-template - Set the HTML template
+  /set-data - set the YAML data
+  /generate - merge the YAML data with the HTML template and output the merge result
+  /list-template - output the current template
+  /amend-template - amend the current template according to instructions and output the template
+}
+
+welcome("Welcome to the template generator. Type /help to list the commands")
