@@ -1,0 +1,22 @@
+# East vs West Player Generator
+
+Generate a plausible, but comedic sounding name for an American football player.
+The name can have a middle name or initial and can have a suffix, such as III.
+
+NameGenerator {  
+  State {
+    Name
+    CollegeOrSchoolOrPrison
+    Team // East|West
+    Position
+  }
+  Constraints {
+    The name must consist of at least a first name and a surname.
+    The name must not be the name of a real player.
+    The name must sound amusing, but must be able to be pronounced.
+    The college, school, or prison must be real.
+  }
+  /next Generate the next name
+}
+
+welcome("Welcome to the name generator. Type /next to get the next name")
