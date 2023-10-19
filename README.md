@@ -9,4 +9,5 @@ A sandbox for playing with SudoLang
   - Rolo and a few links
 - [GitHub repo](https://github.com/paralleldrive/sudolang-llm-support/blob/main/sudolang.sudo.md)
 - [Anatomy of a SudoLang Program: Prompt Engineering by Example](https://medium.com/javascript-scene/anatomy-of-a-sudolang-program-prompt-engineering-by-example-f7a7b65263bc)
-  
+
+<https://www.youtube.com/watch?v=gODZzSOelss>

@@ -11,7 +11,7 @@ NameGenerator {
     Weight
     Height
     Position
-    The weight and height must be consistent with their position in the team, but can be exaggerated for comedy purposes
+    The weight and height must be consistent with their position in the team
     Catchphrase
   }
   Constraints {
