@@ -2,16 +2,16 @@
 
 Generate a plausible, but comedic sounding name for an American football player.
 The name can have a middle name or initial and can have a suffix, such as III.
-Each player has a catchphrase based on their background and physical stature.
+Each player has a catchphrase based on their background, position, and physical stature.
 
 NameGenerator {  
   State {
     Name
     CollegeOrSchoolOrPrison
+    Team // East|West
+    Position
     Weight
     Height
-    Position
-    The weight and height must be consistent with their position in the team
     Catchphrase
   }
   Constraints {
@@ -19,12 +19,13 @@ NameGenerator {
     The name must not be the name of a real player.
     The name must sound amusing, but must be able to be pronounced.
     The college, school, or prison must be real.
+    The weight and height must be consistent with their position in the team, but can be exaggerated for comic purposes
     The catchphrase must not be based on any stereotypes.
   }
   /next Generate the next name and output the result in YAML
+  /help Provide help
   /refine Generate another name based on the last, but with more exaggeration
   /opposite Generate another name based on the last, but with opposite characteristics
-  /help Provide help on using the name generator
 }
 
-jauntyAndEnthusiasticWelcome()
+overTheTopWelcomeInTheStyleOfAFootballCoach()

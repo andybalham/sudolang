@@ -7,19 +7,21 @@ NameGenerator {
   State {
     Name
     CollegeOrSchoolOrPrison
+    Team // East|West
+    Position
     Weight
     Height
-    The weight and height must be consistent with their position in the team
   }
   Constraints {
     The name must consist of at least a first name and a surname.
     The name must not be the name of a real player.
     The name must sound amusing, but must be able to be pronounced.
     The college, school, or prison must be real.
+    The weight and height must be consistent with their position in the team
   }
   /next Generate the next name and output the result in YAML
+  /help Provide help
   /refine Generate another name based on the last, but with more exaggeration
-  /help Provide help on using the name generator
 }
 
 welcome("Welcome to the name generator. Type /next to get the next name")
