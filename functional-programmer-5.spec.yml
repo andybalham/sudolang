@@ -1,0 +1,21 @@
+Function Specification:
+  Purpose: Given a template path and a resource path, returns whether the template matches the resource
+  Inputs: 
+    - pathTemplate: A template used to match resource paths, containing path parameters in curly braces
+    - resourcePath: A resource path from which we want to match
+  Outputs: Whether or not the template path matches
+  Error Handling:
+    - If either input is not specified throw an appropriate error message    
+  Examples:
+    - Inputs: pathTemplate = /widgets/{type}/id/{id}, resourcePath=/widgets/blue/id/1234
+      Expected Output: true
+    - Inputs: pathTemplate = /widgets/{type}, resourcePath=/widgets/blue?includeDeleted=true
+      Expected Output: true
+    - Inputs: pathTemplate = /widgets/{type}/id/{id}, resourcePath=/widgets/green/id/1234
+      Expected Output: true
+    - Inputs: pathTemplate = /widgets/{type}, resourcePath=/bits/cyan?includeDeleted=true
+      Expected Output: true
+    - Inputs: pathTemplate = /widgets/{type}/{id}, resourcePath=/widgets/blue/1234
+      Expected Output: false
+    - Inputs: pathTemplate = /widgets/{type}, resourcePath=/widgets/blue/id?includeDeleted=true
+      Expected Output: false

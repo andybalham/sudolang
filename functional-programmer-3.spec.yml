@@ -1,0 +1,16 @@
+Function Specification:
+  Purpose: To calculate the area of a rectangle given its length and width.
+  Inputs: 
+    - length: A positive number representing the length of the rectangle.
+    - width: A positive number representing the width of the rectangle.
+  Outputs: A positive number representing the area of the rectangle.
+  Detailed Behavior:
+    - Multiply the length by the width.
+    - Return the result of the multiplication.
+  Error Handling:
+    - If either length or width is not a positive number, return an error message: "Invalid input."
+  Examples:
+    - Inputs: length = 5, width = 10
+      Expected Output: 50
+    - Input: length = 0, width = 10
+      Expected Output: "Invalid input."

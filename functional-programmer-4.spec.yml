@@ -1,0 +1,16 @@
+Function Specification:
+  Purpose: Given a template path and a resource URL, extract the parameters from the resource URL
+  Inputs:
+    - pathTemplate: A template used to match resource paths, containing path parameters in curly braces
+    - resourcePath: A resource URL from which we want to extract path and query string parameters
+  Outputs: A object containing a property for each path and query string parameter
+  Error Handling:
+    - If either input is not specified throw an appropriate error message
+    - If the template path parts do not match the resource URL then throw an appropriate error message
+  Examples:
+    - Inputs: pathTemplate = /widgets/{type}/{id}, resourcePath=/widgets/blue/1234
+      Expected Output: { type: blue, id: 1234 }
+    - Inputs: pathTemplate = /widgets/{type}, resourcePath=/widgets/blue?includeDeleted=true
+      Expected Output: { type: blue, includeDeleted: true }
+    - Inputs: pathTemplate = /widgets/{type}, resourcePath=/widgets/blue?description=Big%20Thing
+      Expected Output: { type: blue, description: 'Big Thing' }

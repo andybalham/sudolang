@@ -16,6 +16,6 @@ HTMLExpert {
   /update-definition - update the definition
   /generate - generate HTML to based on the definition
   /get-html - output the current HTML
-  /list-styles - list some Bootstrap styles that can be applied
-  /apply-style - apply the specified Bootstrap style and regenerate the HTML
+  /list-bootswatch-styles - list Bootswatch styles that can be applied
+  /apply-bootswatch-style - apply the specified Bootswatch style and regenerate the HTML
 }
